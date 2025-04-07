@@ -9,6 +9,7 @@ long long dis[mx];
 ///ami top sort jeta ber korbo seta ke reverse ber korbo tahole tar deancestor
 ///tahole tar niche maximum jeta ache oi path ta ami follow korbo
 ///child gula theke maximum nibo arki eivabe agabo
+///Dag hole kintu kora jabe ei kaj ta
 int main()
 {
     ios::sync_with_stdio(false);
