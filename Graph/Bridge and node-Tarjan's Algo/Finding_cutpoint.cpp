@@ -29,13 +29,13 @@ void dfs(int u,int par)
         }
         else if(vis[v]==false)
         {
-            dfs(v,u);
-            low[u]=min(low[u],low[v]);
-            if(low[v]>=st[u] && par!=-1) ///v theke u er upore jaite pare nai
+            dfs(v, u);
+            low[u] = min(low[u], low[v]);
+            if (par != -1 && low[v] >= st[u])
             {
-               adjcmp[u]++;
-               children++;
+                adjcmp[u]++; // count how many new components would be formed if u is removed
             }
+            children++;
         }
     }
     if(par==-1 && children>1) /// root er jodi 2 bar tar odik child thake
@@ -89,6 +89,3 @@ int main()
     }
     return 0;
 }
-
-
-
