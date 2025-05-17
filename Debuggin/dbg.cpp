@@ -29,6 +29,7 @@ int main()
          debug(),dbg(x);
          int y=5;
          debug(),dbg(y);
+         tham; ///enter dile tahole giye code agabe
     }
 
     return 0;
